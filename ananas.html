@@ -3,12 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Definition ananas</title>
+    <style>
+      body {
+        font-family: roboto, sans-serif;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-top: 30px;
+      }
+      li {
+        display: inline-block;
+        margin: 0auto;
+        font-size: 20px;
+      }
+      button {
+        border: none;
+        font-size: 15px;
+        color: #ffffff;
+        background: rgba(45, 100, 204, 0.7);
+        padding: 15px;
+      }
+      button:hover {
+        cursor: pointer;
+        color: rgba(45, 100, 204, 0.7);
+        background: rgba(45, 100, 204, 0.3);
+      }
+      .contain {
+        max-width: 60%;
+        margin: 0 auto;
+        color: rgb(51, 51, 51);
+        background: rgba(45, 100, 204, 0.1);
+        padding: 20px, 50px;
+      }
+      .lar {
+        text-align: center;
+        color: rgba(51, 51, 51, 0.5);
+      }
+      .langue {
+        color: rgba(45, 100, 204, 0.7);
+        transition: all 200ms ease-in-out;
+      }
+      .langue:hover {
+        text-decoration: underline;
+      }
+      .accueil {
+        color: rgba(51, 51, 51, 0.8);
+      }
+      .son {
+        margin-left: 70px;
+        margin-top: 20px;
+      }
+      .titrePage {
+        display: inline;
+        color: rgba(45, 100, 204, 0.7);
+        font-size: 32px;
+      }
+      .def {
+        background: #ffffff;
+        margin-top: 40px;
+      }
+      .definitions {
+        text-align: left;
+        padding-top: 0px;
+        
+      }
+      .divisionDefinition {
+        background: rgba(45, 100, 204, 0.2);
+      }
+      .divDefinition {
+        background: rgba(45, 100, 204, 0.3);
+      }
+      .TypeDifficulte{
+           background: rgba(45, 100, 204, 0.3);
+      }
+      .coder{
+          font-size: 12px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>LAROUSSE</h1>
-    <h2>Langue Française</h2>
-    <p class="accueil">Accueil > langue française > dictionnaire > ananas</p>
-    <p>🔈<strong> ananas </strong> <br /></p>
+    <div class="contain">
+      <h1 class="lar">LAROUSSE</h1>
+      <h2 class="langue">Langue Française</h2>
+      <p class="accueil">Accueil > langue française > dictionnaire > ananas</p>
+      <p class="son">
+        🔈<strong> ananas </strong> nom masculin <br />
+        (tupi anana, par l'intermédiaire du portugais)
+      </p>
+
+      <ul>
+        <li class="sel">
+          <button>Définitions</button>
+        </li>
+        <li>
+          <button>Difficultés</button>
+        </li>
+      </ul>
+      <div class="def">
+        <span class="icon-section fontello">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI-uMKcEBBYqioAsRgziLbParCZ6CxkJLXvQ&usqp=CAU"
+            alt="point d'interrogation"
+            width="24px"
+          />
+        </span>
+        <h1 class="titrePage">Définitions</h1>
+
+        <ul class="definitions">
+          <li class="divisionDefinition">
+            Plante basse semi-pérenne, cultivée en régions tropicales qui
+            fournit un fruit à la pulpe savoureuse.
+          </li>
+          <li class="divDefinition">
+            Gros fruit de cette plante, de forme oblongue, surmonté d'un bouquet
+            foliacé.
+          </li>
+        </ul>
+      
+      <article id="difficulte" class="BlocDifficultes content" role="article">
+        <br />
+        <img
+          src="https://images.jfmedier.dk/images/d/da/da2/da2210a5-7ef9-46bc-a5b7-8e9446d91ad7_4_90_0_0_1186_1186_1440_1440_0d4a0752.jpg"
+          alt="Difficulté"
+          width="24px"
+        />
+        <h1 class="titrePage">Difficultés</h1>
+        <br />
+        <ul class="definitions">
+          <li class="Difficulte">
+            <p class="TypeDifficulte">PRONONCIATION ET REGISTRE
+            <p class="divisionDefinition">
+              comme dans <i>tas</i> (registre soutenu), ou comme <i>as</i>, en
+              faisant entendre le s final (registre courant).
+            </p>
+          </li>
+
+          <li class="Difficulte">
+            <p class="TypeDifficulte">GENRE</p>
+            <p class="divisionDefinition">Masculin <i>: un ananas</i>.</p>
+          </li>
+        </ul>
+    </div>
+    <p class="coder">
+        This page were built by Johanie Damas
+    </p>
+    </div>
   </body>
 </html>
